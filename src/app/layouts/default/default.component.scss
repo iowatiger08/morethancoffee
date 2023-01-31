@@ -1,0 +1,27 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+mat-drawer {
+  width: 275px;
+  background-color: rgb(137, 129, 129);
+}
+
+mat-drawer-container {
+  height: 100%;
+}
+
+mat-drawer-content {
+  padding: 10px;
+}
+
+mat-card{
+  padding: 10px;
+}
+app-footer {
+  padding: 5px;
+  background-color: rgb(203, 201, 201);
+}
+
