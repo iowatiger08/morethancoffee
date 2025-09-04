@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, provideZonelessChangeDetection } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -24,6 +24,6 @@ import { CafeModule } from './modules/cafe/cafe.module';
     CafeModule,
     AppComponent
   ],
-  providers: [BloggerService]
+  providers: [provideZonelessChangeDetection(), BloggerService]
 })
 export class AppModule { }
