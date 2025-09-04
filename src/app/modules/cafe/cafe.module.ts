@@ -6,11 +6,12 @@ import { CafeComponent } from './cafe.component';
 
 
 @NgModule({
-  declarations: [CafeComponent],
+  declarations: [],
   imports: [
     CommonModule,
     MatCardModule,
     MatDividerModule,
+    CafeComponent,
   ]
 })
 export class CafeModule { }

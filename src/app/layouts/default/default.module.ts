@@ -22,13 +22,7 @@ import { CafeModule } from 'src/app/modules/cafe/cafe.module';
 
 @NgModule({
   declarations: [
-    DefaultComponent,
-    DashboardComponent,
 
-    FitnessComponent,
-    MindfulnessComponent,
-    OutreachComponent,
-    AboutComponent
   ],
   imports: [
     CommonModule,
@@ -42,7 +36,13 @@ import { CafeModule } from 'src/app/modules/cafe/cafe.module';
     MatFormFieldModule,
     WordModule,
     CafeModule,
-    TechModule
+    TechModule,
+    DefaultComponent,
+    DashboardComponent,
+    FitnessComponent,
+    MindfulnessComponent,
+    OutreachComponent,
+    AboutComponent
   ]
 })
 export class DefaultModule { }

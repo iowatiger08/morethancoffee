@@ -6,11 +6,12 @@ import { MatCardModule } from '@angular/material/card';
 
 
 @NgModule({
-  declarations: [TechComponent],
+  declarations: [],
   imports: [
     CommonModule,
     MatCardModule,
-    MatDividerModule
+    MatDividerModule,
+    TechComponent
   ]
 })
 export class TechModule { }

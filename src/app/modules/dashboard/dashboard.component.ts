@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
 import { Constants } from 'src/app/shared/components/constants.component';
+import {MatCard} from '@angular/material/card';
+import {MatDivider} from '@angular/material/divider';
 
 export interface PeriodicElement {
   name: string;
@@ -25,6 +27,10 @@ const ELEMENT_DATA: PeriodicElement[] = [
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
+  imports: [
+    MatCard,
+    MatDivider
+  ],
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {

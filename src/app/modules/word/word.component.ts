@@ -3,11 +3,20 @@ import { BloggerItem } from './blogger-item';
 import { BloggerService } from './blogger.service';
 import { BloggerResponse } from './blogger-response';
 import { Subject } from 'rxjs';
+import {MatCard, MatCardContent, MatCardFooter, MatCardTitle} from '@angular/material/card';
+import {MatDivider} from '@angular/material/divider';
 
 @Component({
   selector: 'app-word',
   templateUrl: './word.component.html',
   styleUrls: ['./word.component.scss'],
+  imports: [
+    MatCard,
+    MatCardTitle,
+    MatCardContent,
+    MatCardFooter,
+    MatDivider
+  ]
 })
 export class WordComponent implements OnInit, OnDestroy {
   bloggerResponse: BloggerResponse;

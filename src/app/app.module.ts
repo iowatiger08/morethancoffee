@@ -12,7 +12,7 @@ import { CafeModule } from './modules/cafe/cafe.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -21,9 +21,9 @@ import { CafeModule } from './modules/cafe/cafe.module';
     DefaultModule,
     WordModule,
     TechModule,
-    CafeModule
+    CafeModule,
+    AppComponent
   ],
-  providers: [BloggerService],
-  bootstrap: [AppComponent]
+  providers: [BloggerService]
 })
 export class AppModule { }

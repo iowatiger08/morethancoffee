@@ -9,15 +9,15 @@ import { MatIconModule } from '@angular/material/icon'
 import { MatButtonModule } from '@angular/material/button'
 import { MatMenuModule } from '@angular/material/menu'
 import { MatListModule } from '@angular/material/list'
-import { FlexLayoutModule } from '@angular/flex-layout';
+import { FlexLayoutModule } from 'ng-flex-layout';
 import { MatCardModule } from '@angular/material/card';
 import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
-    HeaderComponent,
-    SidebarComponent,
-    FooterComponent,
+
+
+
   ],
   imports: [
     CommonModule,
@@ -29,12 +29,19 @@ import { RouterModule } from '@angular/router';
     MatMenuModule,
     MatListModule,
     MatCardModule,
-    RouterModule
+    RouterModule,
+    FooterComponent,
+    SidebarComponent,
+    HeaderComponent
   ],
   exports: [
     HeaderComponent,
     SidebarComponent,
-    FooterComponent
+    FooterComponent,
+    MatButtonModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatDividerModule
   ]
 })
 export class SharedModule { }
